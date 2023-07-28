@@ -1,0 +1,5 @@
+ROM php:7.2-apache
+RUN apt update
+RUN apt -y upgrade
+RUN apt install -y gcc git
+RUN apt-get install -y default-libmysqlclient-dev

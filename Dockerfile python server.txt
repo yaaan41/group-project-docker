@@ -1,0 +1,7 @@
+FROM php:7.2-apache
+FROM python:3.10
+RUN apt update
+RUN apt -y upgrade
+RUN apt install -y python3 git
+RUN pip install mysql-connector-python
+COPY src/server.py ./
